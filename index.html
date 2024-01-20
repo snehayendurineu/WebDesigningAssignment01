@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basestyle.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg" />
+    <title>Events</title>
+</head>
+
+<body>
+    <header>
+        <img id="imgHeader" src="images/header2.jpeg" alt="eventvibes"/>
+            <menu>
+                <li><a href="#memorablemoments">Memorable Moments</a></li>
+                <li><a href="#currentevents">Events</a></li>
+                <li><a href="#upcomingeventssec">UpcomingEvents</a></li>
+                <li><a href="#submit">Organize New Event</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </menu>
+    </header>
+    <audio src="images/media/welcome.m4a" controls></audio>
+    <section id="memorablemoments">
+        <h2>Our Memorable Moments</h2>
+        <video controls src="images/media/nusanskriti.mp4"></video>
+        <video controls src="images/media/rangeelo.mp4"></video>
+    </section>
+    <section id="currentevents">
+        <h2>Ongoing Events</h2>
+        <section>
+            <form class="searchbar">
+                <input type="text" placeholder="Event Name"/>
+                <button id="submit1" type="submit">Search</button>
+            </form>
+        </section>
+        <div class="cards">
+            <div class="card">
+                <img src="images/newyear.jpeg" alt="Event1" class="newyear event" width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>New Year Celebrations</summary>
+                        <p style="font-size:smaller;">Location : Speare Hall 102 | Date : 31st Dec 2023</p>
+                    </details>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/artGallery.webp" alt="Event2" class="Art Gallery event"  width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>Art Gallery</summary>
+                        <p style="font-size:smaller;">Location : Richards Hall 010 | Date : 8th Jan 2024</p>
+                    </details>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/careerFair.webp" alt="Event3" class="careerFair event" width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>Career Fair</summary>
+                        <p style="font-size:smaller;">Location : Snell Engineering Floor-2 | Date : 11th Jan 2024</p>
+                    </details>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tedtalk.avif" alt="Event4" class="tedTalks event" width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>Ted Talk</summary>
+                        <p style="font-size:smaller;">Location : Ell Hall 215 | Date : 13th Jan 2024</p>
+                    </details>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sankranthi.jpeg" alt="Event5" class="sankranthi event" width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>Sankranthi Celebrations</summary>
+                        <p style="font-size:smaller;">Location : Shillman Hall Square | Date : 15th Jan 2024</p>
+                    </details>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sportsTournament.png" alt="Event6" class="sportsTournament event" width="400px" height="300px">
+                <div class="card-details">
+                    <details>
+                        <summary>Sports Tournament</summary>
+                        <p style="font-size:smaller;">Location : Marino Center | Date : 18th Jan 2024</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="upcomingeventssec">
+        <h2>Upcoming Events</h2>
+        <table id="upcomingeventst">
+            <thead>
+                <tr class="upcomingevents">
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="upcomingevents">
+                    <td>2024-01-25</td>
+                    <td>Music Festival</td>
+                    <td>Main Park</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr class="upcomingevents">
+                    <td>2024-01-31</td>
+                    <td>Art Exhibition</td>
+                    <td>Art Gallery</td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr class="upcomingevents">
+                    <td>2024-02-05</td>
+                    <td>Sports Tournament</td>
+                    <td>Sports Arena</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>            
+        </table>
+    </section>
+    <br>
+    <br>
+    <section id="submit">
+        <h2>Organize New Event</h2>
+        <!--Submit Event-->
+            <form>
+            <table>
+                <tr>
+                <td><label for="eventName">Event Name:</label></td>
+                <td><input type="text" id="eventName" name="eventName" required></td>
+                </tr>
+               
+                <tr>
+                <td><label for="eventDate">Event Date:</label></td>
+                <td><input type="date" id="eventDate" name="eventDate" required></td>
+                </tr>
+            
+                <tr>
+                <td><label for="eventLocation">Event Location:</label></td>
+                <td><input type="text" id="eventLocation" name="eventLocation" required></td>
+                </tr>
+            
+                <tr>
+                <td><label for="eventTime">Event Time:</label></td>
+                <td><input type="time" id="eventTime" name="eventTime" required></td>
+                </tr>
+            
+                <tr>
+                <td><label for="eventDescription">Event Description:</label></td>
+                <td><textarea id="eventDescription" name="eventDescription" rows="4"></textarea></td>
+                </tr>
+
+                <tr>
+                <td></td>
+                <td><button class ="submit2" type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <address>
+            <!-- Contact information goes here -->
+            <div>
+            <p>call us at: <a href="tel:+18572069037">+1 (857) 206-9037</a> 
+            <p>Email us at: <a href="mailto:connect@eventvibes.com">connect@eventvibes.com</a></p>
+            </div>
+        </address>
+    </section>
+    <section id="Thank You">
+        <h2>Thank You! Feel free to contact us for any queries.</h2>
+    </section>
+        
+
+
+    <footer>
+        <p>&copy; 2024  Events Vibes. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
