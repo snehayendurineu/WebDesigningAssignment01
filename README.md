@@ -1,4 +1,5 @@
 # WebDesigningAssignment01
+<!-- 
 Tags Used :
 <html></html> - It represents the root of an HTML document and is the container for all other HTML elements expect for 
 <head></head> - It is a container for metadata (data about data).
@@ -36,6 +37,6 @@ Required Attributes Used :
 tel - used for phone number
 mailto - used for email
 favicon - used in the head in the from of <link> tag with rel as icon.
-
+-->
 
 
